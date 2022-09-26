@@ -19,7 +19,7 @@
     justify-content: center;
     width: 100%;
     height: auto;
-    margin-block: 5rem;
+    margin-block: 8rem;
   }
   header {
     display: flex;
@@ -279,7 +279,7 @@
     justify-content: center;
     width: 100%;
     height: auto;
-    gap: 1rem;
+    gap: 3rem;
   }
   .info {
     display: flex;
