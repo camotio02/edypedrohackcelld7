@@ -19,7 +19,8 @@
     justify-content: center;
     width: 100%;
     height: auto;
-    margin-block: 8rem;
+    margin-top: 3rem;
+    margin-block: 6rem;
   }
   header {
     display: flex;
@@ -455,5 +456,5 @@
   width: 100%;
   height: 4rem;
   background-color: green;
-  gap: 3rem;
+  gap: 1.5rem;
 }
