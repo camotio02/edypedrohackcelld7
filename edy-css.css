@@ -178,7 +178,7 @@
     background-size: cover;
   }
   .cards .card:nth-child(8) {
-    background-image: url("./_107462823_speed.jpg");
+    background-image: url("./107462823speed.jpg");
     background-size: cover;
   }
   .cards .ba {
@@ -432,4 +432,28 @@
       transform: rotate(360deg);
     }
   }
+  .closemenu {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    bottom: 6rem;
+    right: 2rem;
+    background-color: green;
+    border-radius: 3rem;
+  }
+}
+.rotape {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 4rem;
+  background-color: green;
+  gap: 3rem;
 }
