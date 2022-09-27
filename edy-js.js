@@ -1,9 +1,9 @@
 var links = document.querySelector('div.links');
 const showMenu = () => {
-    links.style.display = 'flex';
+    links.classList.add("shows");
 }
 const closemenu = () => {
-    links.style.display = 'none';
+    links.classList.remove("shows");
 }
 ScrollReveal({
     origin: 'top',
