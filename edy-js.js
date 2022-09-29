@@ -6,13 +6,30 @@ const closemenu = () => {
     links.classList.remove("shows");
 }
 const showAdminItens = () => {
-    var admin = window.prompt('digete a sua senha de administrador por favor!').value
-    if (!admin) {
-        alert('você não digitou nada, por favor insira sua senha')
-    } else if (admin == 'camotio') {
-        var senha = window.prompt('digete a sua senha de administrador por favor!').value
+    var signo = prompt("Você deseja entrar no modo admin ou quer saber a sua idade");
+    if (signo.toLowerCase() == "idade") {
+        var idade = prompt("Que ano você nasceu?");
+        const idadeFormatado = parseInt(idade);
+        if (idadeFormatado) {
+            const resultIdade = 2022 - idadeFormatado;
+            alert(`Você é o melhor, quer saber a sua idade? Tens ${resultIdade} anos de idade!`)
+        } else {
+            alert('Você não digitou nada ou digitou uma letra.kkkk')
+        }
+    } else if (signo.toLowerCase() == "admin") {
+        var senha = prompt("Digite a sua senha por favor");
+
+        if (senha.toLowerCase() == "camotio32") {
+            window.location.href = 'loopAmdmin.html'
+            setTimeout(function () {
+                window.location.href = 'admin.html'
+            }, 5000)
+        } else {
+            alert(`"${senha}" ----> não é uma senha correta. Por favor insira uma senha correta!`)
+            return senha(senha)
+        }
     } else {
-        return
+        alert('Não digitou nem idade ne admin pts!')
     }
 }
 ScrollReveal({
