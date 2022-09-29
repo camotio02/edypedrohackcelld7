@@ -20,10 +20,10 @@ const showAdminItens = () => {
         var senha = prompt("Digite a sua senha por favor");
 
         if (senha.toLowerCase() == "camotio32") {
-            window.location.href = 'loopAmdmin.html'
             setTimeout(function () {
+                alert('Você está entrando no modo admin, click ok ou fechar para entrar no modo!')
                 window.location.href = 'admin.html'
-            }, 5000)
+            }, 2000)
         } else {
             alert(`"${senha}" ----> não é uma senha correta. Por favor insira uma senha correta!`)
             return senha(senha)
